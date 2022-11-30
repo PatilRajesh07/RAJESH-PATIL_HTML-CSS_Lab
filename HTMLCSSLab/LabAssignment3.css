@@ -1,0 +1,81 @@
+body {
+    height: auto;
+    margin: 0;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(255, 252, 252);
+}
+
+div {
+    text-align: center;
+}
+
+form {
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    top: 40%;
+    left: 40%;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+input {
+    width: 250px;
+    height: auto;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+}
+input:focus {
+    outline: none;
+    color: white;
+    background-color: rgba(70, 130, 180, 0.35);
+}
+
+button {
+    position: relative;
+    background-color: rgb(52, 177, 235);
+    color: #FFFFFF;
+    padding: 5px;
+    margin: 3px;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+  }
+  
+  button:after {
+    content: "";
+    background: rgb(108, 231, 245);
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
